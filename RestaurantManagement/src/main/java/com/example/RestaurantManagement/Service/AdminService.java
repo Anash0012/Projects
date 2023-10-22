@@ -9,7 +9,8 @@ import com.example.RestaurantManagement.Repo.IAdminRepo;
 import com.example.RestaurantManagement.Repo.IAuthenticationRepo;
 import com.example.RestaurantManagement.Repo.IFoodRepo;
 import com.example.RestaurantManagement.Service.HashingUtility.PasswordEncrypter;
-import org.Email.MailHandler;
+import com.sun.mail.util.logging.MailHandler;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

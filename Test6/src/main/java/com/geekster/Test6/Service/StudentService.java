@@ -26,12 +26,9 @@ public class StudentService {
     public Student createStudent(Student student) {
         return studentRepo.save(student);
     }
-
     public List<Student> getAllStudents() {
         return studentRepo.findAll();
-
     }
-
     public Student getStudentById(String id) {
         return studentRepo.findById(id).orElse(null);
     }
