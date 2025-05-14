@@ -17,6 +17,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
+
     @Column(nullable = false)
     @NotEmpty
     private String firstName;
@@ -24,9 +25,11 @@ public class User {
     @Column(nullable = false)
     @NotEmpty
     private String lastName;
+
     @Column(nullable = false)
     @NotEmpty
     private String password;
+
     @Column(unique = true , nullable = false)
     @Email
     @NotBlank

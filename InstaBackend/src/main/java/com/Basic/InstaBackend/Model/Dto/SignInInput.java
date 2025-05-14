@@ -19,4 +19,5 @@ public class SignInInput {
 
     @NotEmpty
     private String password;
+
 }

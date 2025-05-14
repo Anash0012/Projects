@@ -79,7 +79,6 @@ public class PatientService {
         return patientRepo.findAll();
     }
 
-
     public String signInPatient(SignInInput signInInput) {
 
 
@@ -104,7 +103,6 @@ public class PatientService {
             return signInStatusMessage;
 
         }
-
 
         try {
             String encryptedPassword = PasswordEncrypter.encryptPassword(signInInput.getPassword());
@@ -158,8 +156,6 @@ public class PatientService {
         Appointment appointment = appointmentService.getAppointmentForPatient(patient);
 
         appointmentService.cancelAppointment(appointment);
-
-
 
     }
 

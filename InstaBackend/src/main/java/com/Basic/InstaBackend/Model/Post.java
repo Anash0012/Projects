@@ -19,7 +19,6 @@ public class Post {
     @Column(nullable = false)
     private LocalDateTime createdDate;
 
-
     @Column(nullable = false)
     @NotEmpty
     private String postData;

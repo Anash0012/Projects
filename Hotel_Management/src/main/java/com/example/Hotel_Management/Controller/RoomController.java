@@ -17,7 +17,6 @@ public class RoomController {
     public String addRoom(@RequestBody Room newRoom){
         return roomService.addRoom(newRoom);
     }
-
     @PostMapping("rooms")
     public String addRooms(@RequestBody List<Room> newRooms){
         return roomService.addRooms(newRooms);
@@ -31,7 +30,7 @@ public class RoomController {
     public Room getRoomsById(@PathVariable Integer id){
         return roomService.getRoomsById(id);
     }
-
+ 
     @DeleteMapping("room/id")
     public String removeRoomsByIds(@RequestBody List<Integer> ids){
         return roomService.removeRoomsByIds(ids);

@@ -15,7 +15,6 @@ public class EmployeeService {
     @Autowired
     EmployeeRepo employeeRepo;
 
-
     public List<Employee> getAllEmployee(List<Employee> employeeList) {
         return (List<Employee>) employeeRepo.findAll();
     }
@@ -23,7 +22,7 @@ public class EmployeeService {
     public Optional<Employee> getEmployeeById(Long id) {
         return employeeRepo.findById(id);
     }
-
+    
     public String addEmployees(List<Employee> employeeList) {
         employeeRepo.saveAll(employeeList);
         return "Employees added successfully"+employeeList;

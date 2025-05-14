@@ -3,7 +3,6 @@ package com.Basic.InstaBackend.Model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.time.LocalDate;
 import java.util.UUID;
 
